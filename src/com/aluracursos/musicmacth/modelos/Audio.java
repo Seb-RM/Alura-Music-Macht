@@ -10,7 +10,7 @@ public class Audio {
 
     private int clasificacion;
 
-    private void meGusta(){
+    public void meGusta(){
         this.totalDeMeGusta++;
     }
 
