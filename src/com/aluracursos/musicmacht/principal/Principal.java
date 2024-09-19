@@ -1,6 +1,7 @@
 package com.aluracursos.musicmacht.principal;
 
 import com.aluracursos.musicmacth.modelos.Cancion;
+import com.aluracursos.musicmacth.modelos.MisFavoritos;
 import com.aluracursos.musicmacth.modelos.Podcast;
 
 public class Principal {
@@ -28,5 +29,18 @@ public class Principal {
 
         System.out.println("Total de reproducciones: "+miCancion.getTotalDeReproducciones());
         System.out.println("Total de Me Gusta: "+miCancion.getTotalDeMeGusta());
+
+        for (int i = 0; i < 8000; i++) {
+            miPodcast.meGusta();
+        }
+
+        for (int i = 0; i < 9200; i++) {
+            miPodcast.reproduce();
+        }
+
+        MisFavoritos favoritos = new MisFavoritos();
+        favoritos.adicione(miPodcast);
+        favoritos.adicione(miCancion);
+
     }
 }
